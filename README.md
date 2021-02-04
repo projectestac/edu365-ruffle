@@ -4,3 +4,5 @@ This is just a test field for the use of [Ruffle](https://ruffle.rs/) in _self-h
 
 This is not a full edu365.cat clone. Only few Flash objects have been adapted.
 
+A live test site is available in: https://met.xtec.cat/edu. Please note that only the links at the top of the page are operational.
+
