@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ca">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+       
+      <title>Confegir</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="../../css/edu365.css" rel="stylesheet">
+       <link href="../../primaria/angles/css/prim_angles.css" rel="stylesheet">
+      <script src="../../js/jquery.min.js"></script>
+      <script src="../../js/bootstrap.min.js"></script>
+      
+      <SCRIPT  SRC="js/funcions.js" type="text/javascript"></SCRIPT>
+	<SCRIPT  SRC="js/paraules1.js" language="JavaScript" type="text/javascript" ></SCRIPT>
+   <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            }      
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+          }
+        }
+      };
+          
+   </script> 
+	  
+
+	    <script language="JavaScript">
+		function changeSrc(url) {
+		array=url.split("/");
+		size=array.length-1;
+		array=array[size].split(".");
+		url=array[0];
+		if(url.charAt(url.length-1)!="1") {
+		url=url+"1";
+		}
+		else {
+		url=url.slice(0,length-1);
+		}
+		return url;
+		}
+		var actual="escriu";
+		var ant="";
+		function jugar(opcio) {
+		parent.joc = opcio;
+		if(opcio!=actual) {
+		imatge=document.getElementById(actual);
+		imatge.src="imatges/"+changeSrc(imatge.src)+".gif";
+		actual=opcio;
+		imatge=document.getElementById(actual);
+		imatge.src="imatges/"+changeSrc(imatge.src)+".gif";
+		}
+		}
+		function href(evt) {
+		jugar(this.id);
+		parent.dibuix.location="pissarra.htm";
+		}
+		var palabras=new Array("copia","escriu","pregunta","dictat");
+		function initImgs(palabras) {
+		for(i=0;i<palabras.length;i++) {
+		obj=document.getElementById(palabras[i]);
+		obj.style.cursor="pointer";
+		if(obj.addEventListener) {
+		obj.addEventListener("click",href,false);
+		}
+		else {
+		obj.onclick=href;
+		} }
+		}
+		function quadre() {
+		window.open("quadre.htm","","height=550,width=500,scrollbars=1");
+		}
+		  </script>
+		  
+		  
+		  
+		  
+		  <link rel=StyleSheet href="estils.css" type="text/css">
+			<script language="JavaScript">
+			function init() {
+				var paraules=parent.teclat.paraules;
+
+				switch (parent.joc) {
+					case 'dictat':
+						word=initMedia(paraules[3]);
+						escriu=new Dictat(word,'id',"so/","dib/",'soBe','so/error.wav');
+					break;
+					case 'pregunta':
+						word=initMedia(paraules[2]);
+						escriu=new Pregunta(word,'id',"so/","dib/",'soBe','so/error.wav');
+					break;
+					case 'copia':
+						word=initMedia(paraules[1]);
+						escriu=new Copia(word,'id',"so/","dib/",'soBe','so/error.wav','texto1');
+					break;
+					case 'escriu':
+					default:
+						word=initMedia(paraules[0]);
+						escriu=new Escriu(word,'id',"so/","dib/");
+					break;
+				}
+				return escriu;
+			}
+
+			function initLayer(nomCapa) {
+				capa=document.getElementById(nomCapa);
+
+				tamBanner=parent.banner.document.getElementById('tabla').width;
+				tamTeclat=parent.teclat.document.getElementById('tabla').width;
+				capa.style.width=tamBanner-tamTeclat;
+				   capa.style.height=350;
+			}
+			function initBoto(nomBoto,objRel) {
+				var boto=document.getElementById(nomBoto);
+				var capa=document.getElementById(objRel);
+				tamTeclat=parent.teclat.document.getElementById('tabla').width;
+				boto.style.left=parseInt(capa.style.width)-parseInt(boto.width)*2
+				boto.style.top=parseInt(capa.style.height)-parseInt(boto.height);
+			}
+			</script>
+			<script language="JavaScript" src="js/funcions.js">
+			</script>
+  </head>
+   <body id="page-top" onload=" initLayer('id');escriu=init();initBoto('boto','id');" class="index">
+      <div class="container-fluid contenidor">
+         <div class="row">
+            <!-- CAPÇALERA -->
+
+         <div w3-include-html="../../parts/cap.html"></div>
+          
+			<!-- FINAL CAPÇALERA -->
+            <div id="cc-slides">
+               <div id="titol_header">
+                  <div class="titol_header_1 transversal">
+                     <h2>Confegir</h2>
+                  </div>
+               </div>
+            </div>
+            <!-- NAVEGACIÓ -->
+     
+         <div w3-include-html="../../parts/menu.html"></div>
+     
+			<!-- FINAL NAVEGACIÓ -->
+            
+         </div>
+         
+         <script>         
+            function navegacio() {
+                var x = document.getElementById("navegacio");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }                 
+                         
+         </script>
+         <!-- COS -->
+         <div id="portfolio" class="row">
+          
+                <div  class="col-md-12 contingut_flash">
+			    
+                
+                <table id="tabla" name="tabla" background="imatges/lincolor.gif" bgcolor="#0099ff" border="0" cellpadding="0" cellspacing="0" height="58" width="760" style="float: left; margin-left: 0px; width: 100%">
+
+		  <tbody>
+
+			<tr valign="top">
+
+			  <td> <a href="http://www.edu365.cat" target="_parent"> <img style="border: 0px solid ; width: 100px; height: 25px;" src="../../imatges/edu365.gif" alt="edu365.cat" title="edu365.cat" /> </a> </td>
+
+			  <td width="100">&nbsp;</td>
+
+			  <td width="58"> <img src="imatges/escriure1.gif" alt="ESCRIU" title="ESCRIU" id="escriu" border="0" height="58" width="58" /></td>
+
+			  <td width="58"> <img src="imatges/copiar.gif" alt="COPIA" title="COPIA" id="copia" border="0" height="58" width="58" /> </td>
+
+			  <td width="58"> <img src="imatges/preguntar.gif" alt="QU&Egrave; &Eacute;S?" title="QU&Egrave; &Eacute;S?" id="pregunta" border="0" height="58" width="58" /> </td>
+
+			  <td width="58"> <img src="imatges/escoltar.gif" alt="DICTAT" title="DICTAT" id="dictat" border="0" height="58" width="58" /> </td>
+
+			  <td width="50">&nbsp;</td>
+
+			  <td width="51"> <a href="javaScript:quadre()" id="hrefQuadre"> <img src="imatges/info2.gif" alt="INFORMACI&Oacute;" title="INFORMACI&Oacute;" border="0" height="58" width="51" /> </a> </td>
+
+			  <td width="231">
+			  <div align="right"> <a href="index.htm" target="_parent"> <img src="imatges/confegir.gif" alt="CONFEGIR - MEN&Uacute;" title="CONFEGIR - MEN&Uacute;" border="0" height="58" width="231" /> </a> </div>
+
+			  </td>
+
+		<!--<td height="37" width="159"> <div align="center"><a href="../index.htm" target="_parent"></a></div> </td>-->
+			</tr>
+
+		  </tbody>
+		</table>
+       
+       <table id="tabla" width="120" border="0" align="left" style="float: left">
+		  <tr>
+			<td align="left" valign="top" colspan="2">
+			  <div align="center"></div>
+			</td>
+		  </tr>
+		  <tr>
+			<td><a href="javascript:parent.dibuix.escriu.add('a')">
+			  <img name="_a" src="imatges/a.gif" width="60" height="60" border="0" alt="A" title="A"></a>
+			</td>
+			<td>
+			  <a href="javascript:parent.dibuix.escriu.add('p')" ><img name="_p" src="imatges/p.gif" width="60" height="60" alt="P" title="P"></a>
+			</td>
+		  </tr>
+		  <tr>
+			<td> <a href="javascript:parent.dibuix.escriu.add('e')"><img name="_e" src="imatges/e.gif" width="60" height="60" alt="E" title="E"></a></td>
+			<td><a href="javascript:parent.dibuix.escriu.add('o')" ><img name="_a" src="imatges/o.gif" width="60" height="60" alt="O" title="O"></a></td>
+		  </tr>
+		  <tr>
+			<td><a href="javascript:parent.dibuix.escriu.add('i')"><img name="_i" src="imatges/i.gif" width="60" height="60" alt="I" title="I"></a></td>
+			<td><a href="javascript:parent.dibuix.escriu.add('u')" ><img name="_u" src="imatges/u.gif" width="60" height="60" alt="U" title="U"></a></td>
+		  </tr>
+		  <tr>
+			<td colspan="2"><a href="javascript:parent.dibuix.escriu.comprovar()" ><img name="_intro" src="imatges/intro.gif" width="120" height="60" alt="ACCEPTA" title="ACCEPTA"></a></td>
+		  </tr>
+		  <tr>
+			<td><a href="javascript:parent.dibuix.escriu.escolta()"><img name="so" src="imatges/so.gif" width="60" height="60" alt="ESCOLTA" title="ESCOLTA"></a></td>
+			<td><a href="javascript:parent.dibuix.escriu.borrarUlt()"><img name="_goma" src="imatges/goma.gif" width="60" height="60" alt="ESBORRA" title="ESBORRA"></a></td>
+		  </tr>
+		  <tr>
+			<td height="60">&nbsp;</td>
+			<td height="60">&nbsp;</td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		  </tr>
+		</table>
+      
+      	<div id="pissarra" style="float: left">
+      	<div id="id" class="texto1" align="center"  > 
+  
+		</div>
+		<img src="imatges/seguir.gif" id="boto"  class="boton" onClick="escriu.init();" alt="SEGÜENT" TITLE="SEGÜENT"> 
+       
+       
+        </div>
+		
+		
+		<br>	
+                
+                
+                </div>	        
+                 
+                 
+                 
+                 
+                 
+         </div>
+        
+         <!-- FINAL COS -->
+         
+         
+         <!-- PEU -->
+        
+         <div w3-include-html="../../parts/peu.html"></div>
+		<!-- FINAL PEU -->
+         
+         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+         <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+            <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+            </a>
+         </div>
+         <!-- BOTONS COMPARTICIÓ -->          
+         <div id="container-floating">
+             <div class="nd5 nds" data-toggle="tooltip" data-placement="left" data-original-title="Comparteix al Twitter">
+               <p class="letter">
+					<a href="#" title="Comparteix a twitter" onClick="window.open(piula(),'piula','left=20,top=20,width=600,height=300,toolbar=0,resizable=1')">
+					
+				  <span class="fa fa-twitter" aria-hidden="true"></span>
+                  </a>
+               </p>
+            </div>
+             
+             <!-- <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="Comparteix al Pinterest">
+               <p class="letter">
+                  <a href="http://pinterest.com/pin/create/bookmarklet/?media=../img/pinterest/portada.jpg&url=http://www.edu365.cat&is_video=[true|false]&description=Edu365.cat" onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
+                  <i class="fa fa-pinterest" aria-hidden="true"></i>
+                  </a>
+               </p>
+            </div>
+-->
+
+            <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+               <p class="plus">
+                  <i class="fa fa-share-alt" aria-hidden="true">
+                  </i>
+               </p>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="../../primaria/catala/contesweb/js/bootstrap.min.js"></script>
+      <!-- inici Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102249957-11"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-102249957-11');
+</script>
+    
+      <!-- final Global site tag (gtag.js) - Google Analytics -->
+      
+      <script>
+         includeHTML();
+</script>
+ 
+
+
+   </body>
+</html>

@@ -1,0 +1,175 @@
+/* BANER */
+header #section-baner {
+  padding: 0;
+}
+header #section-baner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header #section-baner #slides-wrapper {
+  position: relative;
+}
+
+header #section-baner .innerBannerNav button {
+  position: absolute;
+  z-index: 500;
+  border: none;
+  /*height: 50%;*/
+  /*width: 5%;*/
+  top: 25%;
+  background-color: #1A6BA3;
+  font-size: 5rem;
+  line-height: 5rem;
+  padding: 0;
+  font-weight: 700;
+  opacity: .5;
+  transition: padding .5s, opacity .5s;
+  padding: 1% .5%;
+}
+
+header #section-baner .innerBannerNav button:hover,
+header #section-baner .innerBannerNav button:focus,
+header #section-baner .innerBannerNav button:active {
+  color: yellow;
+  opacity: 1;
+  padding: 1% 2%;
+}
+
+header #section-baner #prev-button {  
+  left: 0;    
+  border-radius: 0px 5px 5px 0px;   
+}
+
+header #section-baner #next-button {  
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+header #section-baner #slide-text {
+  background-color: #1A6BA3;
+}
+
+header #section-baner #slide-text a {
+  background-color: #1A6BA3;
+  text-align: center;
+  font-size: 2.5rem;
+  display: block;
+  color: white;
+}
+
+header #section-baner #slide-text a:hover,
+header #section-baner #slide-text a:focus,
+header #section-baner #slide-text a:active {
+  text-decoration: none;
+  color: yellow;
+}
+
+header #section-baner ul.slides {
+  position: relative;
+  overflow: hidden;
+}
+
+header #section-baner ul.slides .slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+header #section-baner ul.slides .slide:first-child {
+  position: relative;
+}
+
+header #section-baner ul.slides .slide.current {
+  z-index: 200;
+}
+
+/*header #section-baner ul.slides .slide.next {
+  z-index: 150;
+}*/
+
+header #section-baner ul.slides .slide.in-transition {
+  z-index: 150;
+}
+
+header #section-baner ul.slides .slide .slide-image {
+  width: 100%;
+}
+
+header #section-baner ul.slidenav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  background-color: #DEE7EB;
+}
+
+header #section-baner ul.slidenav li + li {
+  margin-left: 3rem;
+}
+
+header #section-baner ul.slidenav .slidenav-button {
+  border: none;
+  padding: 0px 9px;
+  background-color: #1A6BA3;
+  font-size: 1.7em;
+  border-radius: 25px;
+  border: 2px solid transparent;
+}
+
+header #section-baner ul.slidenav .slidenav-button:hover,
+header #section-baner ul.slidenav .slidenav-button:focus,
+header #section-baner ul.slidenav .slidenav-button.current {
+  color: #1A6BA3;
+  background-color: white;
+  border: 2px solid #1A6BA3;
+  font-weight: 700;
+}
+
+header #section-baner ul.slidenav .slidenav-button:focus {
+  border: 2px dashed #1A6BA3;
+}
+header #section-baner ul.slidenav #play-button {
+  width: 35px;
+  font-size: 2.5em;
+  border: 2px solid transparent;
+  padding: 5px 6px;
+  background-color: transparent;
+  color: #1A6BA3;
+  line-height: 20px;
+  font-weight: normal;
+  border-radius: 25px;
+  
+}
+
+header #section-baner ul.slidenav #play-button:hover,
+header #section-baner ul.slidenav #play-button:focus {
+  border-color: #1A6BA3;
+}
+
+header #section-baner ul.slidenav #play-button:focus {
+  border-style: dashed;
+}
+
+header #section-baner ul.slidenav #play-button img {
+  width: 100%;
+}
+
+header #section-baner ul.slidenav #play-button #icon-stop {
+  
+}
+
+
+.visuallyhidden {
+  visibility: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+

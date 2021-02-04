@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player showDisplay="yes" showPlaylist="no" autoStart="yes">
+    <song path="audios/corrandes1.mp3" title=" " />
+    <song path="audios/corrandes2.mp3" title=" " />
+    <song path="audios/corrandes3.mp3" title=" " />
+	<song path="audios/blanc.mp3" title=" " />
+ </player>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player showDisplay="yes" showPlaylist="no" autoStart="yes">
+    	<song path="audios/madrid1.mp3" title=" " />
+	<song path="audios/madrid2.mp3" title=" " />
+	<song path="audios/madrid3.mp3" title=" " />
+	<song path="audios/madrid4.mp3" title=" " />
+	<song path="audios/madrid5.mp3" title=" " />
+	<song path="audios/blanc.mp3" title=" " />
+ </player>

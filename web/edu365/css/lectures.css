@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* Lectures idiomes */
+
+/*català*/ .orange{ 
+color: #6b8ba0 !important;}	/** color:#F60!important;}**/
+/*castellà*/ .blue{color:#006!important;}
+/*anglés*/ .red{ color:#F00!important;}
+
+/* Lectures_portada CSS Document */
+
+
+.orange ul li{list-style-image:url(imatges/punt_taronja.png);}
+.red ul li{list-style-image:url(imatges/punt_vermell.png);}
+.blue ul li{list-style-image:url(imatges/punt_blau.png);}
+#contingutBlanc {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    width: 800px;
+	margin:30px auto;
+	clear:both;
+}
+.titol_lect{ text-align:right; font-size:20px;font-style:italic;}
+.autor_lect{ text-align:right;  font-size:16px; margin-top:4px; margin-bottom:10px;}
+.imatge_lect img{ width:100%;}
+.imatge_lect{ text-align:right; background-color:#DEE7EC!important; }
+
+.contingut_plant{margin-bottom:50px;}
+.contigut_plant ul {
+    clear: both;
+    list-style: outside none none !important;
+    margin-left: 2em;
+    margin-right: auto;
+    margin-top: 30px !important;
+    padding: 0;
+    width: 100%;
+}
+ 
+.contingutBlanc li {
+   float: left;
+    font-size: 1.4em;
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+} 
+
+.contingutBlanc li a{
+	text-decoration: none;
+	padding: 10px;
+}
+.cursiva{ font-style:italic!important;}
+.datactual{float:right; font-size:10px; font-weight:normal; text-align:right;}
+.nomicognom{float:left; font-size:10px; font-weight:normal;}
+
+/* Lectures_interior CSS Document */
+
+.contingutBlanc {
+	background-color: #dee7eb;
+	height: 100%;
+	/**margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;**/
+	padding-left: 2em;
+	padding-right: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.fil_lect {
+	text-align:right;
+	font-size:13px;
+}
+
+
+.titol_header_1 h2 {
+    font-size: 30px;
+    
+	
+}
+
+.red a, .red h3 {
+	color:#F00!important; 
+	font-weight:bold;
+}
+
+.orange a, .orange h3 {
+ 	color: #6b8ba0;   /**color:#F60!important; **/
+	font-weight:bold;
+	padding-top: 20px;
+}
+
+.blue a, .blue h3 {
+	color:#006!important; font-weight:bold;
+}
+
+.contingut {
+	font-weight:normal; color:#000!important;
+}
+
+.contingut h3{
+	font-weight:normal; font-size:16px; font-weight:bold;
+}
+
+.spacerv {
+	width: 100%;
+	margin-top: 20px;
+	float: left;
+} 
+
+
+/*.contingut img { margin:5px!important;
+}*/
+
+a.seleccionat{ text-decoration:underline; font-weight:bold;}
+
+.apartat_lect{ text-align:right; font-size:20px;font-style:normal; margin-top:10px;}
+
+.pagina_lect {
+	font-size:11px;
+	text-align:right;
+	margin-top:10px;
+	color:#4F7D9A!important;
+}
+
+
+/*cites*/
+.img-wrap{
+/*height:314px;*/
+overflow:hidden;
+position:relative;
+width:auto;
+margin:5px;
+padding:0px;
+}
+.img-overlay{
+background-color:#002138;
+bottom:0;
+right:0;
+color:#fff;
+opacity:0;
+filter: alpha(opacity = 0);
+position:absolute;
+width:100%;
+z-index:1000;
+}
+.img-overlay p{
+margin:0px!important;
+padding:5px 5px;
+text-align:right;
+font-size:9px!important;
+color:#FFF;
+}
+
+.img-overlay a{
+color:#FFF!important;
+text-decoration:underline!important;
+}
+
+.img-wrap:hover .img-overlay{
+opacity:0.85;
+filter: alpha(opacity = 85);
+transition:opacity 0.15s;
+-moz-transition:opacity 0.15s;
+-webkit-transition:opacity 0.15s;
+}
+
+/** Pàgines Flash **/
+
+.llegenda_flash{
+	font-family: "arial";
+    font-size: 0.9em;
+    padding-top: 10px;
+    text-align: right;
+    width: 77%;
+	font-weight: bold;
+}
+
+
+/** Botó inici Tots els contes **/
+.pagination {
+	margin: 0 0 8px;
+	font-weight: bold;
+}

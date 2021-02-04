@@ -1,0 +1,20 @@
+{
+  "name": "ruffler",
+  "version": "1.0.0",
+  "description": "Injects the ruffle.js script tag in HTML files",
+  "main": "ruffler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ruffle",
+    "flash",
+    "edu365"
+  ],
+  "author": "Francesc Busquets <francesc@gmail.com>",
+  "license": "EUPL-1.2",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "chardet": "^1.3.0"
+  }
+}

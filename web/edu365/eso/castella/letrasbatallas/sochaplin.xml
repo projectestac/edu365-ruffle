@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player showDisplay="yes" showPlaylist="no" autoStart="yes">
+    <song path="audios/chaplin1.mp3" title=" " />
+	<song path="audios/chaplin2.mp3" title=" " />
+	<song path="audios/chaplin3.mp3" title=" " />
+	<song path="audios/chaplin4.mp3" title=" " />
+	<song path="audios/blanc.mp3" title=" " />
+ </player>

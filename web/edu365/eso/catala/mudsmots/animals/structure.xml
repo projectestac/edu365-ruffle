@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<accodion>
+	
+	<item name="COM ET DIUS, BESTIOLA?">
+	<item name="activitat 1" url="01_1.html"></item>
+	<item name="activitat 2" url="01_2.html"></item>
+	<item name="activitat 3" url="01_3.html"></item>
+	</item>
+
+	<item name="BESTIARI LITERARI">
+	<item name="activitat 1" url="02_1.html"></item>
+	<item name="activitat 2" url="02_2.html"></item>
+	<item name="activitat 3" url="02_3.html"></item>
+	</item>
+	
+	<item name="ELS ANIMALS I LLENGUA">
+	<item name="activitat 1" url="03_1.html"></item>
+	<item name="activitat 2" url="03_2.html"></item>
+	<item name="activitat 3" url="03_3.html"></item>
+	</item>
+	
+	<item name="LA LLENGUA DELS ANIMALS">
+	<item name="activitat 1" url="04_1.html"></item>
+	<item name="activitat 2" url="04_2.html"></item>
+	<item name="activitat 3" url="04_3.html"></item>
+	</item>
+	
+	<item name="FAUNA VARIADA">
+	<item name="activitat 1" url="05_1.html"></item>
+	<item name="activitat 2" url="05_2.html"></item>
+	<item name="activitat 3" url="05_3.html"></item>
+	</item>
+	
+</accodion>

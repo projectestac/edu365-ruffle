@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<slideshow>
+	<photo image="imatges/01.gif" url="nomcosa1/exercicis1.html" info="Optional info for image 1" />
+	<photo image="imatges/02.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 2"/>
+	<photo image="imatges/03.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 3"/>
+	<photo image="imatges/04.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 4"/>
+	<photo image="imatges/05.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 5"/>
+	<photo image="imatges/06.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 6"/>
+	<photo image="imatges/07.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 7"/>
+	<photo image="imatges/08.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 8"/>
+	<photo image="imatges/09.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 9"/>
+	<photo image="imatges/10.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 10"/>
+	<photo image="imatges/11.gif" url="http://www.flashcomponents.net/author/snowcat.html" info="Optional info for image 11"/>
+	<photo image="imatges/12.gif" url="nomcosa1/exercicis1.html" info="Optional info for image 12"/>
+</slideshow>

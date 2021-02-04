@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>EDU365</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="css/jquery.gcal_flow.css" rel="stylesheet" type="text/css">
+  <link href="css/edu365.css" rel="stylesheet" type="text/css">
+  <link href="css/edu365_new.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/edu_portada.css">
+  <link rel="stylesheet" href="css/edu_portada_baner.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script defer src="js/include_html.js"></script>    
+  <script src="js/social_edu365.js"></script>
+  <script defer src="js/edu_portada.js"></script>
+  <script defer src="js/edu_portada_baner.js"></script>
+
+  <script>	
+    var BANER = [
+      {
+        text: "Matesfacil",
+        imatge: 'img/portada/banner/baner-matesfacil.png',
+        link: 'https://www.matesfacil.com/catala/index.html',
+      },
+      {
+        text: "Super coloring",
+        imatge: 'img/portada/banner/baner-supercoloring.png',
+        link: 'http://www.supercoloring.com/es/sections/dibujos-para-colorear',
+      },
+      {
+        text: 'El templo de las mil puertas',
+        imatge: 'img/portada/banner/baner-templo-puertas.png',
+        link: 'http://www.eltemplodelasmilpuertas.com/',
+      },
+    ];
+    
+	  var ACTUALITAT = [
+//			   EXEMPLE:
+//		   {
+//			   titol: 'ICT GAMES',
+//			   imatge: 'primaria/angles/imatges/ict-games.png',
+//			   url: 'https://www.ictgames.com/mobilePage/index.html',
+//			   text: 'Jocs i Apps per aprendre en anglès',
+//			   category_links: [
+//		           { name: 'Infantil', url: 'infantil/index.html'},
+//				   { name: 'Primària', url: 'primaria/index.html'},			   				   
+//				   { name: 'ESO', url: 'eso/index.html'},				   
+//				   { name: 'Batxillerat', url: 'batxillerat/index.html'},				   
+//				   { name: 'FP', url: ''},				   
+//				   { name: '+Edu', url: ''},				   
+//			   ]
+//		   },	
+		   {
+			   titol: 'Skribbl.io',
+			   imatge: 'img/portada/actualitat/actualitat-skribblio.png',
+			   url: 'https://skribbl.io/',
+			   text: "Joc estil Pictionari. Crea una sala privada fins amb 12 amics i intenta endevinar el dibuix que està fent un de vosaltres.",
+			  category_links: [				   
+				  { name: 'Primària', url: 'primaria/index.html'},  
+				  { name: 'Eso', url: 'eso/index.html'},
+				 { name: 'Batxillerat', url: 'batxillerat/index.html'},
+			   ]
+		   },		   
+		   {
+			   titol: 'Virtual Lab',
+			   imatge: 'img/portada/actualitat/actualitat-virtual-lab.png',
+			   url: 'https://basf-es.kids-interactive.de/',
+			   text: "Descobreix el món de la química amb el Dr. Bubbler.",
+			   category_links: [
+				   
+				 { name: 'Eso', url: 'eso/index.html'}, 
+				   
+			   ]
+		   },	
+		   {
+			   titol: "Carta Arqueològica de Barcelona",
+			   imatge: 'img/portada/actualitat/actualitat-carta-arqueologica.png',
+			   url: 'http://cartaarqueologica.bcn.cat/',
+			   text: "Més de 3000 punts a la ciutat de Barcelona amb restes arqueològiques d'època romana, medieval i moderna",
+			   category_links: [				   
+				    
+				   { name: 'Primària', url: 'primaria/index.html'},  
+				 { name: 'Eso', url: 'eso/index.html'},
+				   { name: 'Batxillerat', url: 'batxillerat/index.html'},
+			   ]
+		   },	
+	   ];	   
+		  
+	  var AGENDA = [
+//		   EXEMPLE
+//		   {
+//			 titol: "Torneig de Shellshock.io",
+//		     url: "https://www.girona.cat/agenda/cat/agenda_fitxa.php?id=21285&ta=age",
+//		     text: `Si t'agraden els jocs en línia, vine i apunta't al torneig que tenim preparat a El
+//					Güell Espai Jove. Hi ha espai per a 14 persones jugant a la vegada, fes el teu equip
+//					i participa-hi. Divendres 21 de febrer de 2020`,		     
+//		   },
+      
+		     		   {
+			 titol: "Taller de creació de videojocs 3D",
+		     url: "https://bibliotecavirtual.diba.cat/detall-esdeveniment/-/contingut/347883/taller-de-creacio-de-videojocs-3d",
+		     text: `Taller de creació de videojocs 3D per a nens i nenes de 6 a 12 anys. Dies 16, 23 i 30 de gener de 2021`,		     
+		   },
+		   {
+			 titol: "Taller STEAM: Taller d’hidràulica: els fluids en moviment!",
+		     url: "https://bibliotecavirtual.diba.cat/detall-esdeveniment/-/contingut/348654/agenda_taller-steam-6anys",
+		     text: `Un taller molt refrescant i colorit on, tot construint circuits d’aigua, aprendreu conceptes de la mecànica dels fluids i la teoria dels vasos comunicants. Dissabte 16 de gener de 2021`,		     
+		   },
+		   {
+			 titol: "Si hagués nascut a Tàrraco",
+		     url: "https://mhcat.cat/activitats/familiars_culturals/activitats_infantils_i_familiars/si_hagues_nascut_a_tarraco",
+		     text: `Si haguéssiu  nascut a Tàrraco, potser hauríeu viscut en una domus, la casa dels antics romans. Us agradaria descobrir com era una domus romana al Museu d'Història de Catalunya? Dissabte 16 de gener de 2021`,		     
+		   },
+		   {
+			 titol: "Museus de Tarragona: El joc de Nadal. Invisibles",
+		     url: "http://patrimoni.gencat.cat/ca/museusdetarragona/el-joc-de-nadal-invisibles",
+		     text: `A través del joc els museus, us conviden a trobar aquelles peces que habitualment són invisibles en els museus perquè encara avui no tenen presència ni en el passat, ni en el present dins la nostra societat. Fins al 2 de febrer de 2021`,		     
+		   },
+	   ];
+  </script>
+</head>
+  
+<body id="page-top" class="index">
+  <div class="container-fluid contenidor">
+    <div style="font-size: 20px;">
+      <h2>Pàgines adaptades a Ruffle</h2>
+      <ul>
+        <li><a style="color:black !important" href="primaria/catala/entrena/index.html">Entrena't amb l'ortografia</a></li>
+        <li><a style="color:black !important" href="eso/castella/letrasbatallas/index.html">Letras de batallas</a></li>
+        <li><a style="color:black !important" href="eso/catala/mudsmots/index.html">Muds de mots</a></li>
+        <li><a style="color:black !important" href="infantil/pinta/jackson/index.html">Jackson Pollock</a></li>
+        <li><a style="color:black !important" href="infantil/llegir/llegir/paraules.html">Paraules</a></li>
+        <li><a style="color:black !important" href="infantil/llegir/poesia/portada.htm">Poesia</a></li>
+        <li><a style="color:black !important" href="acollida/confegir/index.htm">Confegir</a></li>
+      </ul>
+    </div> 
+
+    <nav id="skip-to-content"><a href="#actualitat">Saltar al contingut</a></nav>
+            
+    <header>
+      <!-- LOGOS-->     
+      <div w3-include-html="parts/cap.html"></div>     
+      <!-- FINAL LOGOS -->
+             
+      <!-- BANNER -->
+      <section id="section-baner" aria-labelledby="slide-text" aria-live="polite">
+      </section>
+      <!-- FINAL BANNER -->
+    </header>
+             
+    <!-- NAVEGACIÓ -->     
+    <div w3-include-html="parts/menu.html"></div>     
+    <!-- FINAL NAVEGACIÓ -->
+         
+    <main>
+      <!-- SECCIÓ ACTUALITAT -->
+      <div id="actualitat" class="row">
+        <div class="col-12 panel-heading" style="padding-top: 0px;">
+         <div class="titol_seccio">
+           <div class="titol_seccio_container">
+             <h1 id="prueba_titulo" class="section-title">ACTUALITAT</h1>
+           </div>
+         </div>
+         <div class="grid-actualitat"></div>
+        </div>
+      </div>
+       
+      <!-- DESTACATS -->
+      <div id="portfolio" class="row">
+        <div class="col-md-12">
+          <div class="titol_seccio">
+            <div class="titol_seccio_container">
+              <h1 class="section-title">DESTACATS</h1>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a href="https://monestirpedralbes.barcelona/rereelsmurs/ca/accio" target="_blank" class="portfolio-link" data-toggle="modal">
+                <img class="img-responsive img-portfolio img-hover" src="img/portada/destacats/destacats-murs-pedralbes.png" alt="">
+                <div class="img-portfolio-overlay">
+                  <div class="text-portfolio">Rere els murs del monestir </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a href="https://www.ted.com/talks?language=ca&sort=newest&topics%5B%5D=Business" target="_blank" class="portfolio-link" data-toggle="modal">
+                <img class="img-responsive img-portfolio img-hover" src="img/portada/destacats/destacats-ted.png" alt="">
+                <div class="img-portfolio-overlay">
+                  <div class="text-portfolio">TED Talks</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a href="https://www.apollogame.site/" target="_blank" class="portfolio-link" data-toggle="modal">
+                <img class="img-responsive img-portfolio img-hover" src="img/portada/destacats/destacats-apollo.png" alt="">
+                <div class="img-portfolio-overlay">
+                  <div class="text-portfolio">Apollo</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a href="https://www.excel-easy.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+                <img class="img-responsive img-portfolio img-hover" src="img/portada/destacats/destacats-excel-easy.png" alt="">
+                <div class="img-portfolio-overlay">
+                  <div class="text-portfolio">Excel Easy</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a href="https://beteve.cat/artic/jocs-de-taula-gratis-online/"  target="_blank" class="portfolio-link" data-toggle="modal">
+                <img class="img-responsive img-portfolio img-hover" src="img/portada/destacats/destacats-jocs-online.png" alt="">
+                <div class="img-portfolio-overlay">
+                  <div class="text-portfolio">Jocs de taula online</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a href="http://www.edu365.cat/capsules/capsula_posters.html" target="_blank" class="portfolio-link" data-toggle="modal">
+                <img class="img-responsive img-portfolio img-hover" src="img/portada/destacats/destacats-capsula-posters.png" alt="">
+                <div class="img-portfolio-overlay">
+                  <div class="text-portfolio">Càpsula:Com podem fer els nostres pósters </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- JUGA/CREA/IMAGINA/AGENDA -->
+      <div class="col-12" >
+        <div class="row agenda">
+          <div class="grid-agenda"> 
+          <!-- APARTATS -->
+            <div class="apartats-titol">
+              <h1 class="section-title">APARTATS</h1>
+            </div>
+            <a href="capsules/index.html" class="apartats-capsules">CÀPSULES</a>
+            <div class="apartats-work-inet">
+              <a href="workshop/index.html" class="apartats-whorkshops">WORKSHOPS</a>
+              <a href="internetsegura/index.html" class="apartats-internet">INTERNET SEGURA</a>
+            </div>
+
+            <!-- AGENDA -->
+            <div class="agenda-titol">
+              <h1 class="section-title">AGENDA VIRTUAL</h1>
+            </div>
+            <!-- Aquí se inyecta automáticamente la AGENDA --> 
+          </div>
+          <br />
+        </div>
+      </div>
+      
+    </main>
+        
+    <div class="col-12" >
+      <!-- PEU -->
+      <div w3-include-html="parts/peu2.html"></div>
+      <!-- FINAL PEU --> 
+    </div>
+                   
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <!--<div class="scroll-top page-scroll">
+     <a class="btn btn-primary" href="#page-top"> <span class="fa fa-chevron-up"></span> </a>
+    </div>-->
+    <!-- BOTONS COMPARTICIÓ -->
+    <aside id="container-floating">
+      <div class="nd5 nds" data-toggle="tooltip" data-placement="left" data-original-title="Comparteix al Twitter">
+        <p class="letter">
+          <a href="#" aria-label="Comparteix a Twitter" title="Comparteix a Twitter" onClick="window.open(piula(),'piula','left=20,top=20,width=600,height=300,toolbar=0,resizable=1')">
+            <span class="fa fa-twitter" aria-hidden="true"></span>
+          </a>
+        </p>
+      </div>
+      <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create">
+       <p class="plus"><span class="fa fa-share-alt" aria-hidden="true"></span></p>
+      </div>
+    </aside>
+ 
+  </div>
+   
+  <!-- Bootstrap Core JavaScript --> 
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script> 
+  <!-- Plugin JavaScript --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> 
+
+  <!-- inici Global site tag (gtag.js) - Google Analytics --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102249957-11"></script> 
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-102249957-11');
+  </script> 
+  <!-- final Global site tag (gtag.js) - Google Analytics --> 
+
+  <script src="js/flickity-docs.min.js"></script> 
+   
+</body>
+</html>                      
+                

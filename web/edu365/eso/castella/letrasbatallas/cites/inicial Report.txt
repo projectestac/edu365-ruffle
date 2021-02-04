@@ -1,0 +1,115 @@
+inicial.swf Informe de película
+--------------------------------
+Fotograma #    Fotograma Bytes    Total Bytes    Escena
+-----------    ---------------    -----------    -----------------
+      1          27317          27317    Escena 1 (Fotograma de exportación para clases de AS 2.0)
+      2              1          27318    
+      3              1          27319    
+      4              1          27320    
+      5              1          27321    
+      6              1          27322    
+      7              1          27323    
+      8              1          27324    
+      9              1          27325    
+     10              1          27326    
+     11              1          27327    
+     12              1          27328    
+     13              1          27329    
+     14              1          27330    
+     15              1          27331    
+     16              1          27332    
+     17              1          27333    
+     18              1          27334    
+     19              1          27335    
+     20              1          27336    
+     21              1          27337    
+     22              1          27338    
+     23              1          27339    
+     24              1          27340    
+     25              1          27341    
+     26              1          27342    
+     27              1          27343    
+     28              1          27344    
+     29              1          27345    
+     30              1          27346    
+     31              1          27347    
+     32              1          27348    
+     33              1          27349    
+     34              1          27350    
+     35              1          27351    
+     36              1          27352    
+     37              1          27353    
+     38              1          27354    
+     39              1          27355    
+     40              1          27356    
+     41              1          27357    
+     42              1          27358    
+     43              1          27359    
+     44              1          27360    
+     45              1          27361    
+     46              1          27362    
+     47              1          27363    
+     48              1          27364    
+     49              7          27371    
+
+Escena                        Forma Bytes    Texto Bytes    ActionScript Bytes
+--------------------------    -----------    -----------    ------------------
+Escena 1                               0            34                     1
+
+Símbolo                       Forma Bytes    Texto Bytes    ActionScript Bytes
+--------------------------    -----------    -----------    ------------------
+Símbolo 147                           69             0                     0
+Símbolo 146                           39             0                     0
+Símbolo 145                           57             0                     0
+Símbolo 144                           50             0                     0
+Símbolo 143                           25             0                     0
+Símbolo 142                           35             0                     0
+Símbolo 141                           48             0                     0
+Símbolo 140                           59             0                     0
+Símbolo 139                           59             0                     0
+Símbolo 138                           61             0                     0
+Símbolo 137                           46             0                     0
+Símbolo 136                          119             0                     0
+Símbolo 135                           45             0                     0
+Símbolo 134                           59             0                     0
+Símbolo 133                           50             0                     0
+Símbolo 132                           81             0                     0
+Símbolo 131                           28             0                     0
+russell.swf                            0             0                     1
+Símbolo 129                            0             0                     0
+Símbolo 128                            0             0                     0
+Símbolo 127                            0             0                     0
+Símbolo 126                            0             0                     0
+Símbolo 125                            0             0                     0
+Símbolo 124                            0             0                     0
+Símbolo 123                            0             0                     0
+Símbolo 122                            0             0                     0
+Símbolo 121                            0             0                     0
+Símbolo 120                            0             0                     0
+Símbolo 119                            0             0                     0
+Símbolo 118                            0             0                     0
+Símbolo 117                            0             0                     0
+Símbolo 116                            0             0                     0
+Símbolo 115                            0             0                     0
+Símbolo 114                            0             0                     0
+Símbolo 113                            0             0                     0
+Símbolo 112                            0             0                     0
+Símbolo 111                            0             0                     0
+Símbolo 1                              0             0                     0
+
+Nombre de fuente                 Bytes        Caracteres    
+-----------------------------    ---------    --------------
+MS Reference Sans Serif         556     FKaegnort
+
+ActionScript Bytes    Ubicación
+------------------    ---------
+                 1    russell.swf:Capa 1:60
+                 1    Escena 1:id:49
+
+Mapa de bits                     Comprimido    Compresión
+-----------------------------    ----------  --------  ----------
+BertrandRussell                13250      265200   JPEG importado=102
+
+
+
+

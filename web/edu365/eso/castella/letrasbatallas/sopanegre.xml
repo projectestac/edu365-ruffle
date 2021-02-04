@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player showDisplay="yes" showPlaylist="no" autoStart="yes">
+    <song path="audios/panegre1.mp3" title=" " />
+	<song path="audios/panegre2.mp3" title=" " />
+	<song path="audios/panegre3.mp3" title=" " />
+	<song path="audios/panegre4.mp3" title=" " />
+	<song path="audios/panegre5.mp3" title=" " />
+	<song path="audios/blanc.mp3" title=" " />
+ </player>

@@ -1,0 +1,19 @@
+
+ENTRENA'T A LLEGIR
+
+!! No fer cas de les subcarpetes. Crec que només són necessàries les pàgines directes dins de la pàgina principal
+
+Passos a fer per generar les pàgines noves:
+- Fer una còpia (guardar com) de la pàgina xxx_old.html
+- Guardar la pàgina de referència: aigua.html (plantilla) i guardar-la com la pàgina que necessitem: "xxx.html"
+- No s'han d'actualitzar els vincles pq estan al mateix nivell. 
+- Seleccionar l'"object" que conté el flash i substituir-lo pel que toca.
+
+
+
+
+No necessita redireccionament ".htm" --> Totes les pàgines en html!!! Execpte l'index
+
+La pàgina de plantilla és "aigua.html"
+
+

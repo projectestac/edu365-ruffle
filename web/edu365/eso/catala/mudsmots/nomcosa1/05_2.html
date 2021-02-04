@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ca">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+       
+      <title>Mud de mots</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="../../../../css/edu365.css" rel="stylesheet">
+       <link href="../../../../primaria/angles/css/prim_angles.css" rel="stylesheet">
+      <script src="http://www.edu365.cat/js/jquery.min.js"></script>
+	  <script src="http://www.edu365.cat/js/bootstrap.min.js"></script>
+      <script src="http://www.edu365.cat/js/social_edu365.js"></script>
+   <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            }      
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+          }
+        }
+      };
+          
+   </script>  
+  <script src="../../../../ruffle/ruffle.js"></script>
+</head>
+   <body
+ id="page-top" class="index">
+      <div class="container-fluid contenidor">
+         <div class="row">
+            <!-- CAPÇALERA -->
+
+         <div w3-include-html="../../../../parts/cap.html"></div>
+          
+			<!-- FINAL CAPÇALERA -->
+            <div id="cc-slides">
+               <div id="titol_header">
+                  <div class="titol_header_1 eso">
+                     <h2>MUDS DE MOTS</h2>
+                  </div>
+               </div>
+            </div>
+            <!-- NAVEGACIÓ -->
+     
+         <div w3-include-html="../../../../parts/menu.html"></div>
+     
+			<!-- FINAL NAVEGACIÓ -->
+            
+         </div>
+         
+         <script>         
+            function navegacio() {
+                var x = document.getElementById("navegacio");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }                 
+                         
+         </script>
+         <!-- COS -->
+         <div id="portfolio" class="row">
+          
+                <div  class="col-md-12 contingut_flash">
+			    
+                
+         <!--       
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="850" height="524" title="Eduland">
+              <param name="movie" value="../../../../primaria/angles/eduland_mini/ciutatok_en.swf" />
+              <param name="quality" value="high" />
+              <embed src="../../../../primaria/angles/eduland_mini/ciutatok_en.swf" width="850" height="524" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+            </object>
+            --><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="160" height="550">
+      <param name="movie" value="menu_vertical.swf" />
+      <param name="quality" value="high" />
+      <embed src="menu_vertical.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="160" height="550"></embed>
+    </object><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="600" height="550" title="activitat">
+    <param name="movie" value="05_2.swf" />
+    <param name="quality" value="high" />
+    <embed src="05_2.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="600" height="550"></embed>
+  </object>
+                </div>	        
+                 
+                 
+                 
+                 
+                 
+         </div>
+         <!-- FINAL COS -->
+         
+         
+         <!-- PEU -->
+        
+         <div w3-include-html="../../../../parts/peu.html"></div>
+		<!-- FINAL PEU -->
+         
+         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+         <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+            <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+            </a>
+         </div>
+         <!-- BOTONS COMPARTICIÓ -->          
+         <div id="container-floating">
+             <div class="nd5 nds" data-toggle="tooltip" data-placement="left" data-original-title="Comparteix al Twitter">
+               <p class="letter">
+					<a href="#" title="Comparteix a twitter" onClick="window.open(piula(),'piula','left=20,top=20,width=600,height=300,toolbar=0,resizable=1')">
+					
+				  <span class="fa fa-twitter" aria-hidden="true"></span>
+                  </a>
+               </p>
+            </div>
+             
+             <!-- <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="Comparteix al Pinterest">
+               <p class="letter">
+                  <a href="http://pinterest.com/pin/create/bookmarklet/?media=../img/pinterest/portada.jpg&url=http://www.edu365.cat&is_video=[true|false]&description=Edu365.cat" onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
+                  <i class="fa fa-pinterest" aria-hidden="true"></i>
+                  </a>
+               </p>
+            </div>
+-->
+
+            <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+               <p class="plus">
+                  <i class="fa fa-share-alt" aria-hidden="true">
+                  </i>
+               </p>
+            </div>
+         </div>
+      </div>
+      
+      <!-- inici Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102249957-11"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-102249957-11');
+</script>
+    
+      <!-- final Global site tag (gtag.js) - Google Analytics -->
+      
+      <script>
+         includeHTML();
+</script>
+ 
+
+
+   </body>
+</html>

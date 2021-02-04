@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player showDisplay="yes" showPlaylist="no" autoStart="yes">
+    <song path="audios/diamant1.mp3" title=" " />
+	<song path="audios/diamant2.mp3" title=" " />
+ 	<song path="audios/diamant3.mp3" title=" " />
+ </player>

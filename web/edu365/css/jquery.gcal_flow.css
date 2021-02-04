@@ -1,0 +1,87 @@
+.gCalFlow {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  float: left;
+  font-size: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  padding-bottom: 0.5em;
+  }
+  
+  .gCalFlow a, .gCalFlow a:visited, .gCalFlow a:hover {
+    color: inherit;
+    _color: black;
+    text-decoration: none; }
+  .gCalFlow a:hover {
+    text-decoration: underline; }
+  .gCalFlow .gcf-header-block {
+    padding: 5px 4px; }
+  .gCalFlow .gcf-title-block {
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: white; }
+
+  .gcf-title-block {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;  
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    margin-top: 2px;  
+    }
+  .gcf-title-block>.dropdown .dropdown-toggle {
+    color: inherit
+    }
+    .gCalFlow .gcf-title-block a, .gCalFlow .gcf-title-block a:visited, .gCalFlow .gcf-title-block a:hover {
+      _color: white;}
+
+  .gCalFlow .gcf-last-update-block {
+    font-size: 76%;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    padding-right: 4px;
+      position: absolute; }
+
+    .gCalFlow .gcf-item-container-block {
+    position: relative;
+    overflow: hidden;
+    background-color: #DEE7EB  
+}
+  .gCalFlow .gcf-item-block {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 3px solid #93B9D2;
+    padding: 10px;
+    height: 66px;
+    }
+
+  .gCalFlow .gcf-item-header-block {
+    white-space: nowrap;
+    overflow: hidden; }
+  .gCalFlow .gcf-item-date-block {
+    font-size: 76%;
+    font-weight: bold;
+    color: #1A6BA3 
+    }
+     
+  .gCalFlow .gcf-item-title-block {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9); }
+  .gcf-item-title-block {
+    color: #1A6BA3
+   }
+  .gCalFlow .gcf-item-body-block {
+    font-size: 80%;
+    font-color: #999;
+    max-height: 2.45em; }
+
+  .gCalFlow .gcf-header-block {
+    background-color: #D9534F;
+  }
+  .gCalFlow .gcf-item-body-block {
+    color: #7A99AE; }

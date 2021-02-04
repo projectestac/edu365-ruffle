@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Confegir</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel=StyleSheet href="estils.css" type="text/css">
+<script language="JavaScript">
+function init() {
+	var paraules=parent.teclat.paraules;
+	
+	switch (parent.joc) {
+		case 'dictat':
+			word=initMedia(paraules[3]);
+			escriu=new Dictat(word,'id',"so/","dib/",'soBe','so/error.wav');
+		break;
+		case 'pregunta':
+			word=initMedia(paraules[2]);
+			escriu=new Pregunta(word,'id',"so/","dib/",'soBe','so/error.wav');
+		break;
+		case 'copia':
+			word=initMedia(paraules[1]);
+			escriu=new Copia(word,'id',"so/","dib/",'soBe','so/error.wav','texto1');
+		break;
+		case 'escriu':
+		default:
+			word=initMedia(paraules[0]);
+			escriu=new Escriu(word,'id',"so/","dib/");
+		break;
+	}
+	return escriu;
+}
+
+function initLayer(nomCapa) {
+	capa=document.getElementById(nomCapa);
+        
+	tamBanner=parent.banner.document.getElementById('tabla').width;
+	tamTeclat=parent.teclat.document.getElementById('tabla').width;
+	capa.style.width=tamBanner-tamTeclat;
+       capa.style.height=350;
+}
+function initBoto(nomBoto,objRel) {
+	var boto=document.getElementById(nomBoto);
+	var capa=document.getElementById(objRel);
+	tamTeclat=parent.teclat.document.getElementById('tabla').width;
+	boto.style.left=parseInt(capa.style.width)-parseInt(boto.width)*2
+	boto.style.top=parseInt(capa.style.height)-parseInt(boto.height);
+}
+</script>
+<script language="JavaScript" src="js/funcions.js">
+</script>
+</head>
+<body onload="initLayer('id');escriu=init();initBoto('boto','id');">
+<div id="id" class="texto1" align="center" > 
+  
+</div>
+<img src="imatges/seguir.gif" id="boto"  class="boton" onClick="escriu.init();" alt="SEGÜENT" TITLE="SEGÜENT"> 
+</body>
+
+</html>
