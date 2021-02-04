@@ -2,6 +2,11 @@
   "name": "ruffler",
   "version": "1.0.0",
   "description": "Injects the ruffle.js script tag in HTML files",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/projectestac/edu365-ruffle.git",
+    "directory": "src/ruffler"
+  },
   "main": "ruffler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
